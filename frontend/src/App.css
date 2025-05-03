@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2c5282;
   padding: 20px;
   color: white;
 }
@@ -17,6 +17,40 @@
   font-size: 1.8rem;
 }
 
+/* Tab Navigation Styles */
+.calculator-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #edf2f7;
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a5568;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: rgba(66, 153, 225, 0.1);
+  color: #2c5282;
+}
+
+.tab-button.active {
+  background-color: white;
+  color: #2c5282;
+  font-weight: 600;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
 main {
   flex: 1;
   padding: 20px;
@@ -24,7 +58,7 @@ main {
 }
 
 footer {
-  background-color: #282c34;
+  background-color: #2c5282;
   color: white;
   padding: 10px;
   font-size: 0.9rem;

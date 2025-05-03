@@ -467,7 +467,7 @@ const SIPCalculator = () => {
                       data: adjustForInflation ? 
                         [totalInvestment, inflationAdjustedValue - totalInvestment] : 
                         [totalInvestment, estimatedReturns],
-                      backgroundColor: ['#4299e1', '#48bb78'],
+                      backgroundColor: ['#3182ce', '#48bb78'],
                       borderColor: ['#ffffff', '#ffffff'],
                       borderWidth: 1,
                       cutout: '70%', // Makes the doughnut thinner
@@ -529,8 +529,8 @@ const SIPCalculator = () => {
                       {
                         label: 'Invested Amount',
                         data: yearlyData.investmentData,
-                        borderColor: '#4299e1',
-                        backgroundColor: 'rgba(66, 153, 225, 0.1)',
+                        borderColor: '#3182ce',
+                        backgroundColor: 'rgba(49, 130, 206, 0.1)',
                         fill: true,
                         tension: 0.4,
                         pointRadius: 3,
