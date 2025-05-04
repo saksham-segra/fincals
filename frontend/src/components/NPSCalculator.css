@@ -1,5 +1,5 @@
-/* src/components/SIPCalculator.css */
-.sip-calculator {
+/* src/components/NPSCalculator.css */
+.nps-calculator {
   max-width: 1200px;
   margin: 0 0 0 20px;
   padding: 20px;
@@ -18,14 +18,14 @@
   }
 }
 
-.sip-calculator h2 {
+.nps-calculator h2 {
   text-align: center;
   color: #3182ce;
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-.sip-calculator {
+.nps-calculator {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
@@ -89,8 +89,6 @@
   text-align: left;
 }
 
-/* Removed special case for step-up input as it's now consistent with all input rows */
-
 .input-group label, .input-row label {
   font-weight: 600;
   color: #2c5282;
@@ -128,91 +126,12 @@
   cursor: not-allowed;
 }
 
-.step-up-group, .inflation-group {
-  margin-top: 20px;
-  border-top: 1px dashed #ddd;
-  padding-top: 15px;
-}
-
-.step-up-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.step-up-toggle label {
-  font-weight: 600;
-  color: #2c5282;
-}
-
-.toggle-button-container {
-  display: flex;
-  align-items: center;
-}
-
-.toggle-button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  width: 60px;
-  height: 30px;
-  background-color: #e2e8f0;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  padding: 0;
-  transition: background-color 0.3s;
-  overflow: hidden;
-}
-
-.toggle-button.active {
-  background-color: #3182ce;
-}
-
-.toggle-button-slider {
-  position: absolute;
-  left: 3px;
-  width: 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.toggle-button.active .toggle-button-slider {
-  transform: translateX(30px);
-}
-
-.toggle-button-text {
-  position: absolute;
-  right: 8px;
-  font-size: 10px;
-  font-weight: bold;
+.input-note {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
   color: #718096;
-  transition: opacity 0.3s;
-}
-
-.toggle-button.active .toggle-button-text {
-  left: 8px;
-  right: auto;
-  color: white;
-}
-
-.step-up-input {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-style: italic;
 }
 
 .results-summary {
@@ -322,7 +241,6 @@
   text-overflow: ellipsis;
   font-weight: 700;
   color: #2b6cb0;
-  margin: 0;
 }
 
 .full-width-card {
@@ -352,107 +270,29 @@
   color: white;
 }
 
-.investment-table .highlight-row {
-  background-color: #ebf8ff;
-  font-weight: 600;
-}
-
-.investment-table .highlight-row:hover {
-  background-color: #bee3f8;
-}
-
-/* Investment Journey Table Styles */
-.investment-journey-section {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.investment-table-wrapper {
-  overflow-x: auto;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.investment-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.investment-table th {
-  background-color: #3182ce;
-  color: white;
-  padding: 12px 15px;
-  text-align: left;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.investment-table td {
-  padding: 10px 15px;
-  border-bottom: 1px solid #edf2f7;
-}
-
-.investment-table tr:nth-child(even) {
-  background-color: #f8fafc;
-}
-
-.investment-table tr:hover {
-  background-color: #ebf8ff;
-}
-
-.inflation-adjusted-value {
-  background-color: #f0fff4;
+.pension-card {
+  background-color: #ed8936;
   border-radius: 8px;
   padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #dd6b20;
   margin-top: 0;
-  border-left: 4px solid #48bb78;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.inflation-adjusted-value h3 {
-  background: linear-gradient(45deg, #3182ce, #48bb78);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 16px;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.inflation-adjusted-value p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 0 5px 0;
-  color: #48bb78;
-}
-
-.inflation-adjusted-value small {
-  display: block;
-  color: #6c757d;
-  font-size: 0.85rem;
-}
-
-.result-card.total {
-  background-color: #3182ce;
-  border-left: 4px solid #2b6cb0;
-}
-
-.result-card.total h3 {
+.pension-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
   color: white;
   font-weight: 700;
 }
 
-.result-card.total p {
+.pension-card p {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
   color: white;
-}
-
-@media (max-width: 768px) {
-  .results-section {
-    grid-template-columns: 1fr;
-  }
 }

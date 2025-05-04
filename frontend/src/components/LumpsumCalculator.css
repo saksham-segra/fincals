@@ -1,5 +1,5 @@
-/* src/components/SIPCalculator.css */
-.sip-calculator {
+/* src/components/LumpsumCalculator.css */
+.lumpsum-calculator {
   max-width: 1200px;
   margin: 0 0 0 20px;
   padding: 20px;
@@ -18,14 +18,14 @@
   }
 }
 
-.sip-calculator h2 {
+.lumpsum-calculator h2 {
   text-align: center;
   color: #3182ce;
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-.sip-calculator {
+.lumpsum-calculator {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
@@ -89,8 +89,6 @@
   text-align: left;
 }
 
-/* Removed special case for step-up input as it's now consistent with all input rows */
-
 .input-group label, .input-row label {
   font-weight: 600;
   color: #2c5282;
@@ -128,7 +126,7 @@
   cursor: not-allowed;
 }
 
-.step-up-group, .inflation-group {
+.inflation-group {
   margin-top: 20px;
   border-top: 1px dashed #ddd;
   padding-top: 15px;
@@ -352,59 +350,6 @@
   color: white;
 }
 
-.investment-table .highlight-row {
-  background-color: #ebf8ff;
-  font-weight: 600;
-}
-
-.investment-table .highlight-row:hover {
-  background-color: #bee3f8;
-}
-
-/* Investment Journey Table Styles */
-.investment-journey-section {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.investment-table-wrapper {
-  overflow-x: auto;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.investment-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.investment-table th {
-  background-color: #3182ce;
-  color: white;
-  padding: 12px 15px;
-  text-align: left;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.investment-table td {
-  padding: 10px 15px;
-  border-bottom: 1px solid #edf2f7;
-}
-
-.investment-table tr:nth-child(even) {
-  background-color: #f8fafc;
-}
-
-.investment-table tr:hover {
-  background-color: #ebf8ff;
-}
-
 .inflation-adjusted-value {
   background-color: #f0fff4;
   border-radius: 8px;
@@ -435,24 +380,4 @@
   display: block;
   color: #6c757d;
   font-size: 0.85rem;
-}
-
-.result-card.total {
-  background-color: #3182ce;
-  border-left: 4px solid #2b6cb0;
-}
-
-.result-card.total h3 {
-  color: white;
-  font-weight: 700;
-}
-
-.result-card.total p {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .results-section {
-    grid-template-columns: 1fr;
-  }
 }
