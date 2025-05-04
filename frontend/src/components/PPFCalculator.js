@@ -390,6 +390,102 @@ const PPFCalculator = () => {
           </div>
         </div>
       </div>
+      
+      {/* PPF Rules and Details Section */}
+      <div className="ppf-rules-section">
+        <h2>PPF Rules and Details</h2>
+        
+        <div className="rules-container">
+          <div className="rule-card">
+            <h3>What is PPF?</h3>
+            <p>Public Provident Fund (PPF) is a long-term savings scheme introduced by the National Savings Institute of the Ministry of Finance, Government of India. It offers an investment avenue with attractive interest rates, tax benefits, and government backing.</p>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Eligibility</h3>
+            <ul>
+              <li>Any Indian resident can open a PPF account</li>
+              <li>Non-Resident Indians (NRIs) cannot open a new PPF account</li>
+              <li>NRIs who opened accounts as residents can continue contributing until maturity</li>
+              <li>Minors can have accounts operated by their guardians</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Contribution Limits</h3>
+            <ul>
+              <li>Minimum annual contribution: ₹500</li>
+              <li>Maximum annual contribution: ₹1,50,000</li>
+              <li>Contributions can be made in lump sum or in 12 installments</li>
+              <li>Deposits can be made any time during the financial year</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Interest Rate</h3>
+            <ul>
+              <li>Interest rate is declared quarterly by the government</li>
+              <li>Current rate: 7.1% per annum (compounded annually)</li>
+              <li>Interest is calculated on the lowest balance between the 5th and the last day of each month</li>
+              <li>Interest is credited at the end of each financial year (March 31st)</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Tax Benefits</h3>
+            <ul>
+              <li>Contributions qualify for tax deduction under Section 80C (up to ₹1.5 lakh)</li>
+              <li>Interest earned is completely tax-free under Section 10(11)</li>
+              <li>Maturity amount is completely tax-free</li>
+              <li>One of the few EEE (Exempt-Exempt-Exempt) tax status instruments</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Tenure and Extension</h3>
+            <ul>
+              <li>Original tenure: 15 years</li>
+              <li>Can be extended in blocks of 5 years indefinitely</li>
+              <li>Extension can be with or without further contributions</li>
+              <li>Extension must be applied for within 1 year of maturity</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Loan Facility</h3>
+            <ul>
+              <li>Loans available from 3rd to 6th financial year</li>
+              <li>Loan amount: Up to 25% of the balance at the end of the 2nd preceding financial year</li>
+              <li>Loan must be repaid within 36 months</li>
+              <li>Second loan available only after full repayment of the first loan</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Withdrawal Rules</h3>
+            <ul>
+              <li>Partial withdrawals allowed from the 7th financial year</li>
+              <li>Withdrawal amount: Up to 50% of the balance at the end of the 4th preceding financial year</li>
+              <li>Only one withdrawal per financial year</li>
+              <li>Premature closure allowed after 5 years for specific reasons (serious illness, higher education, etc.)</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Nomination Facility</h3>
+            <ul>
+              <li>Nomination can be made at the time of opening the account</li>
+              <li>Nomination can be changed during the tenure of the account</li>
+              <li>Multiple nominees can be registered with specified shares</li>
+              <li>In case of death, the nominee(s) can claim the balance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="disclaimer">
+          <p><strong>Disclaimer:</strong> The information provided is for educational purposes only. PPF rules and regulations are subject to change. Please refer to the official government notifications for the most up-to-date information.</p>
+        </div>
+      </div>
     </div>
   );
 };

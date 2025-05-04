@@ -543,6 +543,90 @@ const NPSCalculator = () => {
           </div>
         </div>
       </div>
+      
+      {/* NPS Rules and Details Section */}
+      <div className="nps-rules-section">
+        <h2>NPS Rules and Details</h2>
+        
+        <div className="rules-container">
+          <div className="rule-card">
+            <h3>What is NPS?</h3>
+            <p>National Pension System (NPS) is a voluntary, long-term retirement savings scheme designed to enable systematic savings during the subscriber's working life. It is regulated by the Pension Fund Regulatory and Development Authority (PFRDA).</p>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Eligibility</h3>
+            <ul>
+              <li>Any Indian citizen between 18-65 years of age can join NPS</li>
+              <li>Both resident and non-resident Indians can subscribe to NPS</li>
+              <li>Subscribers can continue investing until age 70</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Contribution Limits</h3>
+            <ul>
+              <li>Minimum annual contribution: ₹1,000</li>
+              <li>Minimum per contribution: ₹500</li>
+              <li>No upper limit on contributions</li>
+              <li>Minimum 4 contributions per fiscal year required</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Tax Benefits</h3>
+            <ul>
+              <li>Employee contributions up to ₹1.5 lakh qualify for deduction under Section 80C</li>
+              <li>Additional deduction of up to ₹50,000 under Section 80CCD(1B)</li>
+              <li>Employer contributions up to 10% of salary (basic + DA) are tax-exempt</li>
+              <li>Lump sum withdrawal (up to 60% of corpus) at maturity is tax-free</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Investment Options</h3>
+            <ul>
+              <li><strong>Auto Choice (Life Cycle Fund):</strong> Asset allocation based on age</li>
+              <li><strong>Active Choice:</strong> Choose your own allocation between:</li>
+              <li>Equity (E): Maximum 75% allocation allowed</li>
+              <li>Corporate Bonds (C): Investment in fixed income securities</li>
+              <li>Government Securities (G): Investment in government bonds</li>
+              <li>Alternative Investment (A): Maximum 5% allocation allowed</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Withdrawal Rules</h3>
+            <ul>
+              <li>At retirement (age 60), minimum 40% of corpus must be used to purchase an annuity</li>
+              <li>Up to 60% can be withdrawn as a lump sum</li>
+              <li>Early withdrawal (before 60) requires 80% of corpus to be used for annuity purchase</li>
+              <li>Partial withdrawals allowed after 3 years for specific purposes (education, marriage, home purchase, medical treatment)</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Types of NPS Accounts</h3>
+            <ul>
+              <li><strong>Tier I:</strong> Mandatory retirement account with restrictions on withdrawals</li>
+              <li><strong>Tier II:</strong> Voluntary savings account with no withdrawal restrictions and no tax benefits</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Exit Options</h3>
+            <ul>
+              <li><strong>Normal Exit (at 60 or above):</strong> At least 40% of corpus must be used to purchase an annuity</li>
+              <li><strong>Premature Exit (before 60):</strong> At least 80% of corpus must be used to purchase an annuity</li>
+              <li><strong>Exit due to death:</strong> 100% of corpus is paid to the nominee/legal heir</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="disclaimer">
+          <p><strong>Disclaimer:</strong> The information provided is for educational purposes only. Tax rules and NPS regulations are subject to change. Please consult a financial advisor before making investment decisions.</p>
+        </div>
+      </div>
     </div>
   );
 };

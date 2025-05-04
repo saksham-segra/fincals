@@ -451,6 +451,90 @@ const EPFCalculator = () => {
           </div>
         </div>
       </div>
+      
+      {/* EPF Rules and Details Section */}
+      <div className="epf-rules-section">
+        <h2>EPF Rules and Details</h2>
+        
+        <div className="rules-container">
+          <div className="rule-card">
+            <h3>What is EPF?</h3>
+            <p>Employee Provident Fund (EPF) is a retirement benefit scheme for salaried employees in India. It's managed by the Employees' Provident Fund Organisation (EPFO) under the Ministry of Labour and Employment, Government of India.</p>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Eligibility</h3>
+            <ul>
+              <li>Mandatory for employees earning up to ₹15,000 per month in organizations with 20+ employees</li>
+              <li>Optional for employees earning more than ₹15,000 per month</li>
+              <li>Applicable to all establishments covered under the EPF Act</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Contribution Rules</h3>
+            <ul>
+              <li>Employee contributes 12% of basic salary + dearness allowance</li>
+              <li>Employer contributes 12% (8.33% to pension scheme, 3.67% to EPF)</li>
+              <li>Contributions are calculated on a maximum salary of ₹15,000 (statutory limit)</li>
+              <li>Employees can voluntarily contribute more via VPF (Voluntary Provident Fund)</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Interest Rate</h3>
+            <ul>
+              <li>Interest rate is declared annually by the EPFO</li>
+              <li>Current rate: 8.15% for FY 2023-24</li>
+              <li>Interest is tax-free in the hands of the employee</li>
+              <li>Interest is calculated monthly but credited annually</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Tax Benefits</h3>
+            <ul>
+              <li>Employee contributions qualify for tax deduction under Section 80C (up to ₹1.5 lakh)</li>
+              <li>Employer contributions are not taxable in the hands of the employee</li>
+              <li>Interest earned is tax-free</li>
+              <li>Withdrawals after 5 years of continuous service are tax-free</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Withdrawal Rules</h3>
+            <ul>
+              <li><strong>Full Withdrawal:</strong> Allowed on retirement after 58 years of age</li>
+              <li><strong>Partial Withdrawal:</strong> Allowed for specific purposes like home purchase, medical treatment, education, marriage</li>
+              <li><strong>Unemployment Withdrawal:</strong> Up to 75% after 1 month of unemployment</li>
+              <li>90% can be withdrawn 1 year before retirement</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>EPF Schemes</h3>
+            <ul>
+              <li><strong>EPF:</strong> The main retirement saving scheme</li>
+              <li><strong>EPS (Employee Pension Scheme):</strong> Provides pension benefits</li>
+              <li><strong>EDLI (Employee Deposit Linked Insurance):</strong> Provides insurance coverage</li>
+            </ul>
+          </div>
+          
+          <div className="rule-card">
+            <h3>Universal Account Number (UAN)</h3>
+            <ul>
+              <li>12-digit unique number assigned to each EPF member</li>
+              <li>Remains the same throughout the working life</li>
+              <li>Helps track and consolidate multiple EPF accounts</li>
+              <li>Enables online access to EPF account</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="disclaimer">
+          <p><strong>Disclaimer:</strong> The information provided is for educational purposes only. EPF rules and regulations are subject to change. Please refer to the official EPFO website for the most up-to-date information.</p>
+        </div>
+      </div>
     </div>
   );
 };
